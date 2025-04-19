@@ -1,8 +1,6 @@
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
-import Image from "next/image";
-import Header from "@/components/Header";
 import Contact from "@/components/Contact";
 import React from "react";
 import Carrusel from "@/components/Carrusel";
@@ -19,7 +17,9 @@ export default function Page() {
                     <h1 className="text-3xl font-bold tracking-wider">Bienvenido a mi Portafolio</h1>
                     <p className="mt-2 text-lg">¡Descubre más sobre mí y mis proyectos!</p>
                 </header>
+                <main>
                 <About />
+                </main>
                 <div>
                     <Carrusel />
                 </div>
