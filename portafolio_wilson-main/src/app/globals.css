@@ -1,0 +1,17 @@
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.clase {
+    -webkit-user-select: none; /* Safari */
+    user-select: none; /* Todos los navegadores modernos */
+}
+
+@font-face {
+    font-family: 'GeistSans';
+    src: url('/fonts/GeistVF.woff') format('woff'); /* Ruta absoluta desde la carpeta `public` */
+    font-weight: 100 900;
+}

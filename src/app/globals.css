@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-black text-white;
+    background-color: black !important; /* Esta línea fuerza el fondo negro */
+    color: white !important; /* Fuerza texto blanco */
+}
+
+.clase {
+    -webkit-user-select: none; /* Safari */
+    user-select: none; /* Todos los navegadores modernos */
+}
+
+@font-face {
+    font-family: "GeistSans";
+    src: url("/fonts/GeistVF.woff") format("woff"); /* Ruta absoluta desde la carpeta `public` */
+    font-weight: 100 900;
+}
+
+.perspective {
+    perspective: 1000px;
+}
+
+.group:hover h2 {
+    transform: rotateY(30deg) rotateX(30deg);
+    transition: transform 0.3s ease;
+}
+
+h2 {
+    background-color: crimson;
+    color: chartreuse;
+    border-radius: 30;
+}

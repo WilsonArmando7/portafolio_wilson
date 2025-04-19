@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Soporte para características modernas de JavaScript
+    "lib": ["dom", "dom.iterable", "esnext"], // Librerías necesarias para trabajar con el navegador
+    "allowJs": true, // Permitir archivos .js junto con .ts y .tsx
+    "skipLibCheck": true, // Saltar la verificación de tipos en las definiciones de librerías
+    "strict": true, // Habilitar modo estricto
+    "noEmit": true, // No emitir archivos de salida
+    "esModuleInterop": true, // Habilitar interoperabilidad con módulos ES
+    "module": "esnext", // Usar el módulo ESNext
+    "moduleResolution": "node", // Resolución de módulos estilo Node.js
+    "resolveJsonModule": true, // Permitir importaciones de archivos JSON
+    "isolatedModules": true, // Asegurar que cada archivo actúe como un módulo independiente
+    "jsx": "preserve", // Preservar JSX, ya que Next.js se encarga de compilarlo
+    "incremental": true, // Habilitar compilación incremental para mejorar el rendimiento
+    "baseUrl": ".", // Base para las rutas relativas
+    "paths": {
+      "@/*": ["src/*"] // Alias para rutas desde la carpeta src
+    },
+    "plugins": [
+      {
+        "name": "next" // Plugin para soporte adicional de Next.js
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts", // Archivo de configuración de entorno Next.js
+    "**/*.ts", // Incluir todos los archivos TypeScript
+    "**/*.tsx", // Incluir todos los archivos TypeScript con JSX
+    ".next/types/**/*.ts" // Incluir tipos generados por Next.js
+  ],
+  "exclude": [
+    "node_modules" // Excluir módulos externos
+  ]
+}
