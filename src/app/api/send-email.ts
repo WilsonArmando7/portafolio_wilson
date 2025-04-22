@@ -49,7 +49,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 error: error.message,
             });
         } else {
-            console.error("Error desconocido");
+            console.error("Error desconocido al enviar el correo");
             res.status(500).json({
                 success: false,
                 message: "Ocurrió un error desconocido al enviar el correo",
