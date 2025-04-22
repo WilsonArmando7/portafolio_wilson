@@ -7,7 +7,6 @@ import Carrusel from "@/components/Carrusel";
 import Educacion from "@/components/Educacion"; // Importa aquí claramente el nuevo componente
 import Skills from "@/components/Skills"; // si usás alias con Next.js
 
-
 export default function Page() {
     return (
         <>
@@ -17,16 +16,11 @@ export default function Page() {
                     <h1 className="text-3xl font-bold tracking-wider">Bienvenido a mi Portafolio</h1>
                     <p className="mt-2 text-lg">¡Descubre más sobre mí y mis proyectos!</p>
                 </header>
-                <main>
+
+                {/* Contenido */}
                 <About />
-                </main>
-                <div>
-                    <Carrusel />
-                </div>
-                <div>
-                    <Educacion /> {/* Aquí claramente agregas la sección Educación */}
-                </div>
-                
+                <Carrusel />
+                <Educacion />
                 <Skills />
                 <Projects />
                 <Contact />

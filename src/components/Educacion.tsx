@@ -59,7 +59,7 @@ const Educacion = () => {
 
                     {/* Tarjeta: Curso React y Angular */}
                     <div className="bg-orange-500 rounded-lg p-6 shadow-lg hover:scale-105">
-                        <h3 className="text-xl font-semibold">Curso React y Angular</h3>
+                        <h3 className="text-xl font-semibold">Curso de Inglés</h3>
                         <p className="text-black">Plataforma en línea (Udemy)</p>
                         <p className="mt-2 text-black">
                             (En proceso){" "}

@@ -29,7 +29,7 @@ const About = () => {
                 </div>
 
                 <p className="max-w-xl text-sm leading-relaxed text-gray-300">
-                    Soy estudiante de Ingeniería en Sistemas, apasionado por la tecnología y el desarrollo de soluciones
+                    Ingeniero en Sistemas, apasionado por la tecnología y el desarrollo de soluciones
                     digitales. Durante mi formación he adquirido experiencia en diversas herramientas y tecnologías,
                     desde el desarrollo web con HTML, CSS y JavaScript, hasta frameworks modernos como React.js, Next.js
                     y Bootstrap. También tengo conocimientos en backend utilizando Node.js y bases de datos como
