@@ -40,7 +40,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             success: true,
             message: "Correo enviado exitosamente",
         });
-    } catch (error) {
+    } catch (error:unknown) {
         if (error instanceof Error) {
           console.error("Error al enviar el correo:", error.message);
           res.status(500).json({
@@ -56,4 +56,3 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           });
         }
       }
-      
