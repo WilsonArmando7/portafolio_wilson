@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2020", // Soporte para características modernas de JavaScript
-    "lib": ["dom", "dom.iterable", "esnext"], // Librerías necesarias para trabajar con el navegador
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // Librerías necesarias para trabajar con el navegador
     "allowJs": true, // Permitir archivos .js junto con .ts y .tsx
     "skipLibCheck": true, // Saltar la verificación de tipos en las definiciones de librerías
     "strict": true, // Habilitar modo estricto
@@ -15,13 +19,16 @@
     "incremental": true, // Habilitar compilación incremental para mejorar el rendimiento
     "baseUrl": ".", // Base para las rutas relativas
     "paths": {
-      "@/*": ["src/*"] // Alias para rutas desde la carpeta src
+      "@/*": [
+        "src/*"
+      ] // Alias para rutas desde la carpeta src
     },
     "plugins": [
       {
         "name": "next" // Plugin para soporte adicional de Next.js
       }
-    ]
+    ],
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "next-env.d.ts", // Archivo de configuración de entorno Next.js

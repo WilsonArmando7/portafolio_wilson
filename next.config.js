@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    reactStrictMode: true, // ✅ Correcto
+    swcMinify: true, // ✅ Reemplaza "suchUnify" por "swcMinify"
     experimental: {
-        appDir: true,
+        appDir: true, // ⚠️ Solo si usas Next.js 13+
     },
-    // 👇 fuerza el uso de webpack en lugar de Turbopack
 };
 
 module.exports = nextConfig;
